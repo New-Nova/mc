@@ -266,23 +266,3 @@ else{nc(F,"DOMContentLoaded",Ig);nc(F,"readystatechange",Ig);if(F.createEventObj
 
 
 }
-/*
-     FILE ARCHIVED ON 00:41:28 Jun 17, 2020 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 19:33:19 Mar 03, 2025.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.632
-  exclusion.robots: 0.024
-  exclusion.robots.policy: 0.01
-  esindex: 0.012
-  cdx.remote: 43.029
-  LoadShardBlock: 175.558 (3)
-  PetaboxLoader3.datanode: 288.081 (4)
-  load_resource: 442.494
-  PetaboxLoader3.resolve: 284.766
-*/
