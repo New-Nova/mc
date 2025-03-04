@@ -4,7 +4,7 @@ document.getElementById("textToCopy").addEventListener("click", function() {
     
 
     navigator.clipboard.writeText(text).then(() => {
-        btn.classList.add("copied", "important")
+        btn.classList.add("copied")
         btn.innerHTML = "Copied to clipBoard!"
 
       setTimeout(() => {
