@@ -922,3 +922,30 @@ nav>ul>.sm-nav>li {
 }
 
 
+/*Crafting page only!*/
+#custom-recipes {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+}
+
+.recipe img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.recipe p {
+  font-size: 16px;
+  margin-top: 8px;
+}
