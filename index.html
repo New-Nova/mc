@@ -15,11 +15,39 @@
 <link href="files/main-242e38614db10fc8c743.css" rel="stylesheet">
 </head>
 
+
+<style>
+   .test {
+      background-color: rgba(165, 15, 12, 0.645);
+      height: 50px;
+      padding: 10px;
+    }
+
+    ul.test {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul.test li {
+      display: flex;
+      justify-content: center;
+    }
+
+    a#news {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+</style>
 <body>
 
   <nav id="navigation">
     <ul class="centerwrap"> <a href="https://new-nova.github.io/mc/"><img class="logo" src="./files/NewNova2.png"
           alt="new nova logo"></a>
+        <a id="players" class="">Currently 0 players online</a>
       <div id="toggleMenu" class="sm-menu"></div>
       <div class="lg-nav">
 
@@ -40,13 +68,19 @@
       </div>
     </ul>
   </nav>
+  <nav style="background-color: rgba(213, 15, 12, 0.645);">
+    <ul class="test">
+        <li><a id="news">Now with 2 different map! /server join earth2</a></li>
+      
+    </ul>
+  </nav>
   <section class="splashscreen">
     <div class="cardwrap">
       <div class="card">
         <h2>Welcome to</h2>
         <h1>New Nova</h1>
-        <p>New Nova is a towny server running on Minecraft 1.21.3, currently running the older map from EarthMC, known
-          as Terra Nova, with all the old towns!
+        <p>New Nova is a towny server running on Minecraft 1.21.4, currently running the older map from EarthMC, known
+          as Terra Nova, with all the old towns! (now with a second new map!)
         </p> <a id="textToCopy" class="cardbutton">IP: newnova.blockworlds.io</a>
       </div>
       <div class="australiamap"> <img src="files/dynglobe.png" alt="splashscreen image"> </div>
@@ -55,13 +89,13 @@
   <section id="main-content">
     <div class="textarea">
       <h2 id="getstarted">Getting started</h2>
-      <p> <span class="highlight">New Nova is a towny 1.21.3 minecraft server based on the discontinued nova map from
+      <p> <span class="highlight">New Nova is a towny 1.21.4 (older versions (as low as 1.8) should work, but not recomanded, for the best experience use 1.21.4) minecraft server based on the discontinued nova map from
           EarthMC</span>. This
         guide will get you started on getting started yet again on nova. <span class="highlight">Join using the address
           <b>newnova.blockworlds.io</b></span> and
         join our <a href="https://discord.gg/fSS5RGaY7R">Discord server.</a> <br>
 
-        what follows is a guide on the basics of the server and towny in general, if you played on Terra Nova there are only a few
+        what follows is a guide on the <a href="#other">basics</a> of the server and <a href="#town">towny</a>. in general, if you played on Terra Nova there are only a few
         thing that you need to know:
         all towns that were existed up untill last day of uptime of Terra nova have been preserved, <b>but</b> inactive
         towns are getting deleted, so your town might be gone!
@@ -92,7 +126,7 @@
         <div class="code-bg"> <code class="markdown"><span>/t toggle</span></code> </div>
       </div>
       <p></p>
-      <p> <span class="highlight">In order to expand your town one chunk, you have to pay 16 gold (Note: The more chunks
+      <p> <span class="highlight">In order to expand your town one chunk, you have to pay 16 gold (8g on earth2) (Note: The more chunks
           you claim the more gold you have to pay.)</span> and run: </p>
       <div class="highlight-code">
         <div class="code-bg"> <code class="markdown"><span>/t claim</span></code> </div>
@@ -125,6 +159,7 @@
         <div class="code-bg"><code class="markdown"><span>/n new &lt;Nation_Name_Here&gt;</span></code></div>
       </div>
       <p></p>
+      
       <h2 id="ranks">Ranks</h2>
       <p>You can set different ranks for your town/nation members. This gives you the power to limit access, but also
         grant your residents different capabilities. </p>
@@ -133,6 +168,38 @@
             class="markdown"><span>/town rank add &lt;Player_Name Rank_Name&gt;</span> or <span>/nation rank add &lt;Player_Name Rank_Name&gt;</span></code>
         </div>
       </div>
+      <p></p>
+      <h2 id="other">Other plugins</h2>
+      <p>the server runs a couple of other intresting plugins, here's a quick list of them and a simple explanation</p>
+      <ul>
+      <li>● <strong>hrails</strong> - A simple plugin that make minecarts faster, if you place a powered rail over a redstone block the cart will accelerate a lot more then normal, reaching a max speed similar to the speed of an elytra.</li>
+      <li>● <strong>SmoothTimber</strong> - A plugin that makes tree fall in one click, just a quality of life improvement because it consumes the same amount of durability from your axe.</li>
+      <li>● <strong>VeinMiner</strong> - Literally the same thing as SmoothTimber, but for ore veins.</li>
+      <li>● <strong>BigDoors</strong> - A plugin that lets you create bigger doors made out of blocks with a smooth animation and a simple GUI to manage almost everything. the power block to open a door with redstone is a <strong>stone block</strong>, everything else is in the gui accessible with the command.
+      <li>● <strong>SilkSpawners</strong> - A plugin that lets you mine spawners with a silktouch pickaxe, so you can create more efficient farms!
+      <div class="highlight-code">
+        <div class="code-bg"><code
+            class="markdown"><span>/doors</span></code>
+        </div>
+      </div>
+    </li>
+    <li>● <strong>QuickShop</strong> - Quickshop is a simple little plugin that lets you create a shop over a chest, what follows is a really simple guide, for a more in depth guide i suggest looking at the <a target="_blank" href="https://quickshop-community.github.io/QuickShop-Hikari-Documents/docs/intro">official guide</a>: <strong>To create a shop </strong> you just need to left click with the item you want to sell a chest, it will ask you for the price in chat, click send and done! you set up a shop. <strong>To manage the shop</strong> just left click the sign, almost everything is accessible right there!</li>
+    <li>● <strong>BottledExp</strong> - A small plugin that lets you store your xp back into xp bottles, it has a couple of features the 2 main commands are:</li>  
+      <p>this command lets you store all your xp into one bottle but <strong>you will loose some xp every time you use this</strong></p>
+      <div class="highlight-code">
+        <div class="code-bg"><code
+            class="markdown"><span>/bottle store &lt;amount&gt;</span></code>
+        </div>
+      </div>
+    <p>this command lets you store your xp in vanilla xp bottle, so you will get a lot of bottles</p>
+      <div class="highlight-code">
+        <div class="code-bg"><code
+            class="markdown"><span>/bottle get &lt;amount&gt;</span></code>
+        </div>
+      </div>
+    
+    
+  </ul>
       <p></p>
       <!--
       <ul>
@@ -180,24 +247,27 @@
             <h6>Community</h6>
             <ul>
                 <li><a href="./rules.html">Rules</a></li>
-                <li><a href="https://discord.gg/fSS5RGaY7R">Discord Server</a></li>
-                <li><a href="https://newnova.miraheze.org/wiki/Main_Page">Wiki</a></li>
-                <li><a href="http://newnova.blockworlds.io:8123">Dynmap</a></li>
+                <li><a target="_blank" href="https://discord.gg/fSS5RGaY7R">Discord Server</a></li>
+                <li><a target="_blank" href="https://newnova.miraheze.org/wiki/Main_Page">Wiki</a></li>
+                <li><a target="_blank" href="http://newnova.blockworlds.io:8123">Nova Dynmap</a></li>
+                <li><a target="_blank" href="http://newnova.blockworlds.io:8084/v2/newnova/">Nova Api</a></li>
+                <li><a target="_blank" href="http://newnova.blockworlds.io:8234">Earth2 Dynmap</a></li>
+                <li><a target="_blank" href="http://newnova.blockworlds.io:8085/v2/newnova/">Earth2 Api</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h6>Usefull community tools</h6>
             <ul>
-                <li><a href="https://davide0033.github.io/Nova-Dynglobe/">Terra Nova dynglobe </a></li>
-                <li><a href="https://davide0033.github.io/TerraNovaMap/">Dynmap backup 2024</a></li>
-                <li><a href="https://discord.gg/JZSZZMWDmh">NovaWS</a></li>
+                <li><a target="_blank" href="https://davide0033.github.io/Nova-Dynglobe/">Terra Nova dynglobe </a></li>
+                <li><a target="_blank" href="https://davide0033.github.io/TerraNovaMap/">Dynmap backup 2024</a></li>
+                <li><a target="_blank" href="https://discord.gg/JZSZZMWDmh">NovaWS</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h6>Special thanks to</h6>
             <ul>
-                <li><a href="https://earthmc.net">EarthMC</a></li>
-                <li><a href="https://emctoolkit.vercel.app/">EarthMC tookit</a></li>
+                <li><a target="_blank" href="https://earthmc.net">EarthMC</a></li>
+                <li><a target="_blank" href="https://emctoolkit.vercel.app/">EarthMC tookit</a></li>
             </ul>
         </div>
     </div>
